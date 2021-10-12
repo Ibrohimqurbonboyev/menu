@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <button class="open-menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-wrapper">
+          <ul class="navbar-nav">
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">Portfolio</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">Blog</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">Contact me</a>
+            </li>
+          </ul>
+          <button class="close-menu" id="toggle">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </nav>
+
+      <section class="headers">
+        <h1 class="heading-title">Lorem, ipsum dolor.</h1>
+        <p class="heading-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
+          assumenda?
+        </p>
+        <button class="open-modal" id="open">Sign Up</button>
+      </section>
+    </header>
+    <main>
+      <section class="content">
+        <h2>What is this landing page about?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          dignissimos deserunt error reiciendis voluptatibus accusamus dolorum
+          delectus repudiandae aperiam assumenda.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+          ipsa!
+        </p>
+      </section>
+      <section class="content">
+        <h2>Tell Me More</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          dignissimos deserunt error reiciendis voluptatibus accusamus dolorum
+          delectus repudiandae aperiam assumenda.
+        </p>
+      </section>
+      <section class="content">
+        <h2>Benefits</h2>
+        <ul>
+          <li>lorem 1</li>
+          <li>lorem 2</li>
+          <li>lorem 3</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          dignissimos deserunt error reiciendis voluptatibus accusamus dolorum
+          delectus repudiandae aperiam assumenda Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Veritatis, odit saepe repudiandae
+          aliquid accusantium itaque voluptas corrupti laboriosam similique
+          aspernatur.
+        </p>
+      </section>
+
+
+      
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Sign Up</h3>
+        </div>
+        <div class="modal-content">
+          <p>Register with us to get offers, support and more</p>
+          <form class="modal-form">
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter Name"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="password2">Confirm Password</label>
+              <input
+                type="password"
+                id="password2"
+                placeholder="Confirm Password"
+                class="form-input"
+              />
+            </div>
+            <input type="submit" value="Submit" class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
